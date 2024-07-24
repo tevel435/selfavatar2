@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.movement": "file:C:/Users/tevel/Downloads/Unity-Movement-5.0.1/Unity-Movement-5.0.1",
+    "com.meta.movement": "https://github.com/oculus-samples/Unity-Movement.git",
     "com.meta.xr.sdk.all": "64.0.0",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",
