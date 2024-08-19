@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 2f3a3e79b19793845a6e55ef49d290ec
   - enabled: 1
     path: Assets/Scenes/with_avatar.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/wo_avatar.unity
     guid: 97bdb8b746f78de408248b650f20bbdd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/fat_cooper.unity
     guid: d984f07103b8e204296ffe2832de74f7
   - enabled: 0
