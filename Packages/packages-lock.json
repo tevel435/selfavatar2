@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.meta.movement": {
-      "version": "file:C:/Users/tevelk/Downloads/Unity-Movement-5.2.1/Unity-Movement-5.2.1",
+      "version": "file:C:/Users/tevelk/Downloads/Unity-Movement-5.1.0/Unity-Movement-5.1.0",
       "depth": 0,
       "source": "local",
       "dependencies": {

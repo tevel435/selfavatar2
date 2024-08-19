@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18154646, g: 0.22718693, b: 0.3074047, a: 1}
+  m_IndirectSpecularColor: {r: 0.18154685, g: 0.22718762, b: 0.3074059, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -885,6 +885,7 @@ MonoBehaviour:
   mrcActivationMode: 0
   launchSimultaneousHandsControllersOnStartup: 0
   isInsightPassthroughEnabled: 1
+  shouldBoundaryVisibilityBeSuppressed: 0
   requestBodyTrackingPermissionOnStartup: 1
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
@@ -933,6 +934,9 @@ MonoBehaviour:
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
   instanceId: 872715dc-8781-4b34-b770-b4c550677184
   version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
 --- !u!1 &1105537563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1136,7 @@ MonoBehaviour:
   hmd: {fileID: 396405296}
   leftCharacterInstance: {fileID: 0}
   rightCharacterInstance: {fileID: 0}
-  num_interactions: 18
+  num_interactions: 12
   total_shoko: 0
   total_vanil: 0
 --- !u!4 &1236458949
@@ -2088,6 +2092,9 @@ MonoBehaviour:
   blockId: f0540b20-dfd6-420e-b20d-c270f88dc77e
   instanceId: 2d9c7aad-2ebd-4898-a766-c03d701ea038
   version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
 --- !u!4 &1741567945
 Transform:
   m_ObjectHideFlags: 0

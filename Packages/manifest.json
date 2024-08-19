@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.movement": "file:C:/Users/tevelk/Downloads/Unity-Movement-5.2.1/Unity-Movement-5.2.1",
+    "com.meta.movement": "file:C:/Users/tevelk/Downloads/Unity-Movement-5.1.0/Unity-Movement-5.1.0",
     "com.meta.xr.sdk.all": "67.0.0",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",

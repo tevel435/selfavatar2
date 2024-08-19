@@ -248,6 +248,7 @@ MonoBehaviour:
   mrcActivationMode: 0
   launchSimultaneousHandsControllersOnStartup: 0
   isInsightPassthroughEnabled: 1
+  shouldBoundaryVisibilityBeSuppressed: 0
   requestBodyTrackingPermissionOnStartup: 1
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
@@ -296,6 +297,9 @@ MonoBehaviour:
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
   instanceId: 872715dc-8781-4b34-b770-b4c550677184
   version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
 --- !u!4 &19732282
 Transform:
   m_ObjectHideFlags: 0
@@ -1148,11 +1152,9 @@ MonoBehaviour:
   m_Name: CorrectBones
   m_EditorClassIdentifier: 
   Weight: 1
-  _processorType: 1
   _correctPositionsLateUpdate: 1
   _shoulderCorrectionWeightLateUpdate: 0
   _fingerPositionCorrectionWeight: 0
-  _regenJobData: 0
 --- !u!1 &624775637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,64 +1248,14 @@ MonoBehaviour:
   m_Name: CorrectLeftHand
   m_EditorClassIdentifier: 
   Weight: 1
+  _handedness: 0
   _handIKType: 1
-  _ikTolerance: 0.000001
-  _ikIterations: 10
+  _useWorldHandPosition: 1
+  _useCustomHandTargetPosition: 1
   _maxHandStretch: 0.01
   _maxShoulderStretch: 0
-  _minDistance: 0.2
-  _maxDistance: 0.5
-  _blendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _headView: 0
-  _isFullBody: 1
-  _syncOvrControllersAndHandsSettings:
-    _syncOvrOption: 0
-    _ovrHandControllerPositionOffset: {x: 0.04, y: -0.04, z: -0.11}
-    _ovrHandControllerOrientationOffset: {x: 0.45096692, y: 0.5491966, z: -0.54516363, w: 0.44475672}
-    _mirrorHandControllerOffsets: 1
-  _leftHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 11
-    _fullBodyBoneIdToTest: 19
-    _boneIdToTest: 19
-    _armChainBones: 
-  _rightHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 11
-    _fullBodyBoneIdToTest: 19
-    _boneIdToTest: 19
-    _armChainBones: 
+  _ikTolerance: 0.000001
+  _ikIterations: 10
 --- !u!4 &687183144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293808371360447254, guid: aa9d48bcd214bea4ea5d9d9d97ff589f, type: 3}
@@ -2130,6 +2082,9 @@ MonoBehaviour:
   blockId: f0540b20-dfd6-420e-b20d-c270f88dc77e
   instanceId: 2d9c7aad-2ebd-4898-a766-c03d701ea038
   version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
 --- !u!4 &1328371499
 Transform:
   m_ObjectHideFlags: 0
@@ -2223,7 +2178,6 @@ MonoBehaviour:
     _rightToesWeight: 1
     _alignFeetWeight: 0.75
     _originalSpinePositionsWeight: 0.5
-    _armLengthMultiplier: 0
     _originalSpineBoneCount: 4
     _originalSpineUseHipsToHeadToScale: 1
     _originalSpineFixRotations: 0
@@ -2751,64 +2705,14 @@ MonoBehaviour:
   m_Name: CorrectRightHand
   m_EditorClassIdentifier: 
   Weight: 1
+  _handedness: 0
   _handIKType: 1
-  _ikTolerance: 0.000001
-  _ikIterations: 10
+  _useWorldHandPosition: 1
+  _useCustomHandTargetPosition: 1
   _maxHandStretch: 0.01
   _maxShoulderStretch: 0
-  _minDistance: 0.2
-  _maxDistance: 0.5
-  _blendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _headView: 0
-  _isFullBody: 1
-  _syncOvrControllersAndHandsSettings:
-    _syncOvrOption: 0
-    _ovrHandControllerPositionOffset: {x: 0.04, y: -0.04, z: -0.11}
-    _ovrHandControllerOrientationOffset: {x: 0.45096692, y: 0.5491966, z: -0.54516363, w: 0.44475672}
-    _mirrorHandControllerOffsets: 1
-  _leftHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 11
-    _fullBodyBoneIdToTest: 19
-    _boneIdToTest: 19
-    _armChainBones: 
-  _rightHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 11
-    _fullBodyBoneIdToTest: 19
-    _boneIdToTest: 19
-    _armChainBones: 
+  _ikTolerance: 0.000001
+  _ikIterations: 10
 --- !u!1001 &1554596199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4740,11 +4644,9 @@ MonoBehaviour:
   m_Name: CorrectBones
   m_EditorClassIdentifier: 
   Weight: 1
-  _processorType: 0
   _correctPositionsLateUpdate: 1
   _shoulderCorrectionWeightLateUpdate: 1
   _fingerPositionCorrectionWeight: 0
-  _regenJobData: 0
 --- !u!1 &1772431511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,64 +4956,14 @@ MonoBehaviour:
   m_Name: CorrectHand
   m_EditorClassIdentifier: 
   Weight: 1
+  _handedness: 0
   _handIKType: 1
-  _ikTolerance: 0.000001
-  _ikIterations: 10
+  _useWorldHandPosition: 1
+  _useCustomHandTargetPosition: 1
   _maxHandStretch: 0.01
   _maxShoulderStretch: 0
-  _minDistance: 0.2
-  _maxDistance: 0.5
-  _blendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _headView: 0
-  _isFullBody: 1
-  _syncOvrControllersAndHandsSettings:
-    _syncOvrOption: 0
-    _ovrHandControllerPositionOffset: {x: 0.04, y: -0.04, z: -0.11}
-    _ovrHandControllerOrientationOffset: {x: 0.45096692, y: 0.5491966, z: -0.54516363, w: 0.44475672}
-    _mirrorHandControllerOffsets: 1
-  _leftHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 11
-    _fullBodyBoneIdToTest: 19
-    _boneIdToTest: 19
-    _armChainBones: 
-  _rightHandProcessor:
-    BlendHandWeight: 1
-    HandIKWeight: 1
-    _useWorldHandPosition: 1
-    _useCustomHandTargetPosition: 1
-    _useSecondaryBoneId: 1
-    _fullBodySecondBoneIdToTest: 16
-    _fullBodyBoneIdToTest: 45
-    _boneIdToTest: 45
-    _armChainBones: 
+  _ikTolerance: 0.000001
+  _ikIterations: 10
 --- !u!1 &1913184656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d575417d366793c489937df31ff32997, type: 3}
@@ -5497,7 +5349,6 @@ MonoBehaviour:
     _rightToesWeight: 1
     _alignFeetWeight: 0.75
     _originalSpinePositionsWeight: 0.5
-    _armLengthMultiplier: 1
     _originalSpineBoneCount: 4
     _originalSpineUseHipsToHeadToScale: 1
     _originalSpineFixRotations: 1
@@ -5969,7 +5820,7 @@ MonoBehaviour:
   hmd: {fileID: 243270029}
   leftCharacterInstance: {fileID: 0}
   rightCharacterInstance: {fileID: 0}
-  num_interactions: 18
+  num_interactions: 12
   total_shoko: 0
   total_vanil: 0
 --- !u!4 &2126378729
